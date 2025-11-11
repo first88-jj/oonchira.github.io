@@ -3,71 +3,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Weerawong Hongsa — Portfolio</title>
-  <meta name="description" content="Oonchira Saenta นางสาวอรจิรา แสนตา — นางสาวอรจิรา แสนตา ปัจจุบันอายุ 20ปี นักศึกษาสาขาวิทยาการคอมพิวเตอร์ ชั้นปีที่3 ที่มีความสนใจด้าน Data Analysis, Data Science และ Business Analysis มีพื้นฐานในการวิเคราะห์ข้อมูล การจัดการฐานข้อมูล และการสร้าง Dashboard ด้วยเครื่องมือต่าง ๆ เช่น Python, SQL, Excel และ Power BI มีความสามารถในการประยุกต์ความรู้ด้าน Data Engineering เพื่อเตรียมและจัดการข้อมูลสำหรับการวิเคราะห์ พร้อมทั้งมีทักษะการคิดเชิงวิเคราะห์และการสื่อสารข้อมูลให้เข้าใจง่าย มุ่งมั่นที่จะพัฒนาทักษะด้านการวิเคราะห์ข้อมูลในสภาพแวดล้อมการทำงานจริง">
-  <link rel="icon" href="data:,"><style>
+  <title>Oonchira Saenta — Portfolio</title>
+  <meta name="description" content="Portfolio ของนางสาวอรจิรา แสนตา นักศึกษาวิทยาการคอมพิวเตอร์ สนใจด้าน Data Analysis, Data Science และ Business Analysis">
+  <link rel="icon" href="data:,"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
   :root{
-    --bg:#f9f9fb;
-    --card:#ffffff;
-    --text:#333;
+    --bg1:#fdfbff;
+    --bg2:#f3f0ff;
+    --card:#ffffffcc;
+    --text:#2d2d2d;
     --muted:#6b7280;
-    --accent:#a78bfa;
-    --accent2:#f9a8d4;
-    --accent3:#7dd3fc;
+    --accent:#c4b5fd;
+    --accent2:#fbcfe8;
+    --accent3:#bae6fd;
+    --shadow:0 8px 25px rgba(0,0,0,0.08);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
   body{
-    font-family:'Poppins',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
-    background:linear-gradient(180deg,#fdf7ff 0%,#f9fafb 100%);
+    font-family:'Kanit','Poppins',sans-serif;
+    background:linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 100%);
     color:var(--text);
     scroll-behavior:smooth;
   }
   header{
-    position:sticky;top:0;z-index:10;background:rgba(255,255,255,0.8);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(0,0,0,0.05);
-    display:flex;align-items:center;justify-content:space-between;padding:12px 24px;
+    position:sticky;top:0;z-index:10;background:rgba(255,255,255,0.7);
+    backdrop-filter:blur(12px);
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+    display:flex;align-items:center;justify-content:space-between;padding:16px 32px;
   }
   .brand{display:flex;align-items:center;gap:12px}
   .logo{
-    width:44px;height:44px;border-radius:12px;
+    width:48px;height:48px;border-radius:16px;
     background:linear-gradient(135deg,var(--accent),var(--accent2));
-    display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:18px;
+    display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:18px;box-shadow:var(--shadow);
   }
-  nav ul{display:flex;gap:16px;list-style:none}
+  nav ul{display:flex;gap:20px;list-style:none}
   nav a{
     color:var(--muted);text-decoration:none;font-weight:500;
-    padding:6px 10px;border-radius:8px;transition:0.2s;
+    padding:8px 12px;border-radius:8px;transition:0.25s;
   }
-  nav a:hover,nav a.active{color:var(--text);background:rgba(167,139,250,0.15)}
-  .container{max-width:1000px;margin:0 auto;padding:32px 20px}
-  section{scroll-margin-top:90px;margin-bottom:40px;background:var(--card);padding:28px;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
-  .tag{display:inline-block;background:var(--accent3);color:#0369a1;padding:4px 10px;border-radius:999px;font-size:13px;margin-bottom:8px}
+  nav a:hover,nav a.active{color:var(--text);background:rgba(196,181,253,0.3)}
+  .container{max-width:1100px;margin:0 auto;padding:40px 20px}
+  section{scroll-margin-top:100px;margin-bottom:60px;background:var(--card);padding:32px;border-radius:24px;box-shadow:var(--shadow);backdrop-filter:blur(8px);transition:0.3s}
+  section:hover{transform:translateY(-3px)}
+  .tag{display:inline-block;background:var(--accent3);color:#0369a1;padding:5px 12px;border-radius:999px;font-size:14px;margin-bottom:10px;font-weight:500}
   h1,h2{color:#111;font-weight:700}
-  h1{font-size:28px;margin-bottom:8px}
-  h2.section-title{font-size:22px;margin-bottom:12px;color:#374151}
-  p{color:var(--muted);line-height:1.6}
-  .projects .project{padding:12px;border-radius:12px;margin-bottom:10px;background:rgba(167,139,250,0.1);transition:0.3s}
-  .projects .project:hover{background:rgba(167,139,250,0.25);transform:translateY(-2px)}
-  .project h4{margin-bottom:4px;color:#4c1d95}
-  .timeline{position:relative;margin:20px 0;padding-left:20px;border-left:3px solid var(--accent)}
-  .timeline-item{margin-bottom:16px;padding-left:12px;position:relative}
-  .timeline-item::before{content:'';position:absolute;left:-9px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent2)}
-  .contact-info p{display:flex;align-items:center;gap:8px;font-size:15px}
-  footer{text-align:center;margin:40px 0 10px 0;color:var(--muted);font-size:13px}
-  a.btn{display:inline-block;background:var(--accent);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;margin-top:12px}
-  a.btn:hover{opacity:0.9}
-  @media(max-width:880px){nav ul{flex-wrap:wrap;gap:8px}.container{padding:16px}}
+  h1{font-size:30px;margin-bottom:8px}
+  h2.section-title{font-size:24px;margin-bottom:16px;color:#4338ca;border-bottom:3px solid var(--accent2);display:inline-block;padding-bottom:4px}
+  p{color:var(--muted);line-height:1.7;font-size:16px}
+  .projects .project{padding:16px;border-radius:16px;margin-bottom:12px;background:rgba(196,181,253,0.15);transition:0.3s}
+  .projects .project:hover{background:rgba(196,181,253,0.3);transform:translateY(-4px)}
+  .project h4{margin-bottom:6px;color:#4c1d95;font-weight:600}
+  .timeline{position:relative;margin:20px 0;padding-left:28px;border-left:3px solid var(--accent)}
+  .timeline-item{margin-bottom:20px;padding-left:14px;position:relative}
+  .timeline-item::before{content:'';position:absolute;left:-10px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--accent2);box-shadow:0 0 0 3px #fff}
+  .contact-info p{display:flex;align-items:center;gap:10px;font-size:16px;margin:6px 0}
+  footer{text-align:center;margin:50px 0 20px;color:var(--muted);font-size:14px}
+  a.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:600;margin-top:14px;box-shadow:var(--shadow)}
+  a.btn:hover{opacity:0.95;transform:scale(1.03)}
+  @media(max-width:880px){nav ul{flex-wrap:wrap;gap:10px}.container{padding:20px}.logo{width:40px;height:40px}}
   </style>
 </head>
 <body>
   <header>
     <div class="brand">
-      <div class="logo">WH</div>
+      <div class="logo">OS</div>
       <div>
-        <div style="font-weight:700">Weerawong Hongsa</div>
-        <div class="muted" style="font-size:13px">DATA-DRIVEN CREATOR</div>
+        <div style="font-weight:700">Oonchira Saenta</div>
+        <div style="font-size:13px;color:var(--muted)">DATA-DRIVEN ANALYST</div>
       </div>
     </div>
     <nav>
@@ -84,19 +87,19 @@
   <div class="container">
     <section id="about">
       <span class="tag">DATA-DRIVEN CREATOR</span>
-      <h1>นางสาวอรจิรา แสนตา Oonchira Saenta</h1>
-      <p>นักศึกษาวิทยาการคอมพิวเตอร์ ชั้นปีที่ 3 — เกรดเฉลี่ย 3.48<br>,มีความสนใจในด้าน Data Engineer, Data Science และ Data Analysis</p>
-      <a class="btn" href="#contact">พร้อมฝึกงาน / ติดต่อ</a>
+      <h1>นางสาวอรจิรา แสนตา (Oonchira Saenta)</h1>
+      <p>นักศึกษาวิทยาการคอมพิวเตอร์ ชั้นปีที่ 3 เกรดเฉลี่ย 3.48<br>สนใจสาย Data Engineer, Data Science และ Business Analysis มีความสามารถในการใช้ Python, SQL, Power BI และ Excel เพื่อวิเคราะห์และสื่อสารข้อมูลได้อย่างเข้าใจง่าย</p>
+      <a class="btn" href="#contact">พร้อมฝึกงาน / ติดต่อฉัน</a>
     </section>
 
     <section id="projects">
       <h2 class="section-title">โปรเจกต์ GitHub</h2>
       <div class="projects">
-        <div class="project"><h4>MyStore</h4><p>ระบบจัดการสินค้า — Java, SQL, UI/UX</p></div>
-        <div class="project"><h4>Bua Shop</h4><p>แอปจัดการสินค้า — Kotlin, MySQL, Android Studio</p></div>
-        <div class="project"><h4>Crime Scene Insights</h4><p>วิเคราะห์ข้อมูลอาชญากรรม — Python, Pandas, Power BI</p></div>
-        <div class="project"><h4>Rundom</h4><p>แอปช่วยออกกำลังกาย — Kotlin, Firebase</p></div>
-        <div class="project"><h4>NoteNote</h4><p>เว็บจดโน้ตและจัดหมวดหมู่โน้ต — Java, Spring Boot, MySQL</p></div>
+        <div class="project"><h4>📦 MyStore</h4><p>ระบบจัดการสินค้า — Java, SQL, UI/UX</p></div>
+        <div class="project"><h4>🛍️ Bua Shop</h4><p>แอปจัดการสินค้า — Kotlin, MySQL, Android Studio</p></div>
+        <div class="project"><h4>🧠 Crime Scene Insights</h4><p>วิเคราะห์ข้อมูลอาชญากรรม — Python, Pandas, Power BI</p></div>
+        <div class="project"><h4>🏃 Rundom</h4><p>แอปช่วยออกกำลังกาย — Kotlin, Firebase</p></div>
+        <div class="project"><h4>📝 NoteNote</h4><p>เว็บจดโน้ตและจัดหมวดหมู่โน้ต — Java, Spring Boot, MySQL</p></div>
       </div>
     </section>
 
@@ -104,29 +107,29 @@
       <h2 class="section-title">ไทม์ไลน์การพัฒนา</h2>
       <div class="timeline">
         <div class="timeline-item"><strong>2025</strong> — สร้างเว็บไซต์ Portfolio ส่วนตัว พร้อมออกแบบระบบฐานข้อมูล</div>
-        <div class="timeline-item"><strong>2024</strong> — เรียนรู้ Data Engineering, Spring Boot และพัฒนาโปรเจกต์ Bua Shop</div>
+        <div class="timeline-item"><strong>2024</strong> — ศึกษา Data Engineering และพัฒนาโปรเจกต์ Bua Shop</div>
         <div class="timeline-item"><strong>2023</strong> — พัฒนาแอป Kotlin ตัวแรก และเรียนรู้พื้นฐาน Machine Learning</div>
-        <div class="timeline-item"><strong>2022</strong> — เริ่มต้นเรียนวิทยาการคอมพิวเตอร์ และพัฒนาโปรเจกต์แรก</div>
+        <div class="timeline-item"><strong>2022</strong> — เริ่มต้นเรียนวิทยาการคอมพิวเตอร์ และทำโปรเจกต์แรก</div>
       </div>
     </section>
 
     <section id="learning">
       <h2 class="section-title">เส้นทางการเรียนรู้</h2>
-      <p>Coloring — Neural Networks and Deep Learning (กันยายน 2568 - ตุลาคม 2568)</p>
-      <p>Bua Shop — Database Management System & Design (ธันวาคม 2567 - มกราคม 2568)</p>
-      <p>Rundom — Programming for Mobile Application (พฤษภาคม 2567 - ตุลาคม 2567)</p>
+      <p>🎨 Neural Networks and Deep Learning (กันยายน 2568 - ตุลาคม 2568)</p>
+      <p>🧩 Database Management System & Design (ธันวาคม 2567 - มกราคม 2568)</p>
+      <p>📱 Programming for Mobile Application (พฤษภาคม 2567 - ตุลาคม 2567)</p>
     </section>
 
     <section id="contact">
       <h2 class="section-title">ติดต่อ</h2>
       <div class="contact-info">
         <p>📍 ขอนแก่น</p>
-        <p>📞 0953308944</p>
+        <p>📞 095-330-8944</p>
         <p>✉️ <a href="mailto:3224oonchira@gmail.com">3224oonchira@gmail.com</a></p>
       </div>
     </section>
 
-    <footer>© 2025 Oonchira — Design & Code by Oonchira</footer>
+    <footer>© 2025 Oonchira Saenta — Design & Code by Oonchira</footer>
   </div>
 
   <script>
