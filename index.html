@@ -1,1 +1,262 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Worachira Saenta</title>
+    <style>
+        /* Global Reset & Base */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f8fa; /* GitHub background color */
+            color: #24292e; /* GitHub text color */
+        }
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px; /* เพิ่ม padding ด้านข้าง */
+        }
 
+        /* --- Navigation Bar (Navbar) --- */
+        .navbar {
+            background-color: #24292e; /* Dark GitHub header color */
+            padding: 10px 0;
+            box-shadow: 0 1px 3px rgba(27,31,35,0.1);
+            position: sticky; /* ทำให้ Navbar อยู่ด้านบนเสมอเมื่อ Scroll */
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-content {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-logo a {
+            color: white;
+            font-weight: 600;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        .navbar-links a {
+            color: #c9d1d9; /* Lighter link color */
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95em;
+        }
+        .navbar-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        /* Header & Profile */
+        .profile-header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e1e4e8;
+            margin-top: 20px;
+        }
+        .profile-header h1 {
+            font-size: 2.2em;
+            margin-bottom: 5px;
+            color: #0366d6;
+        }
+
+        /* Section Styling */
+        h2 {
+            font-size: 1.6em;
+            border-bottom: 1px solid #e1e4e8;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        /* Content Boxes (No change from previous version) */
+        .content-box {
+            background-color: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* Anchor point styling (เพื่อให้ scroll ไปถึงส่วนหัวพอดี) */
+        .section-anchor {
+            padding-top: 60px; /* ชดเชยความสูงของ navbar */
+            margin-top: -60px;
+        }
+        
+        /* Lists, Skills, Tables, etc. (No change from previous version) */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        /* ... CSS ส่วนอื่น ๆ ที่เหลือจากโค้ดก่อนหน้า ... */
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            border: 1px solid #e1e4e8;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #e1e4e8;
+            text-align: left;
+            font-size: 0.95em;
+        }
+        th {
+            background-color: #f6f8fa;
+            font-weight: 600;
+        }
+        .skill-tag {
+            display: inline-block;
+            background-color: #e1e4e8;
+            color: #24292e;
+            padding: 4px 8px;
+            margin: 4px 4px 4px 0;
+            border-radius: 2em;
+            font-size: 0.9em;
+        }
+        .award-img-placeholder {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            text-align: center;
+            color: #6a737d;
+            border-radius: 4px;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">
+                <a href="#home">👩‍💻 Worachira Saenta</a>
+            </div>
+            <div class="navbar-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#awards">Awards</a>
+                <a href="#contact">Contact</a>
+                <a href="https://github.com/Tsuki2548" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        
+        <div class="profile-header" id="home">
+            <h1>นางสาววรจิรา แสนตา</h1>
+        </div>
+
+        <h2 class="section-anchor" id="about">👋 About Me</h2>
+        <div class="content-box">
+            <p>ผมเป็นนักศึกษาปีที่ 3 ที่เชี่ยวชาญด้าน <strong>Data Analysis, Data Science</strong> และ <strong>Business Analysis</strong> โดยเน้นการพัฒนาเครื่องมือการวิเคราะห์ข้อมูลและการแสดงผลด้วย Dashboard</p>
+            <p>มีความสามารถในเครื่องมือหลัก เช่น <strong>Python, SQL, Excel และ Power BI</strong> มุ่งมั่นที่จะนำความรู้ด้าน Data Engineering มาประยุกต์ใช้เพื่อการจัดการข้อมูลที่มีประสิทธิภาพ และการสร้างแบบจำลอง Machine Learning เบื้องต้น</p>
+        </div>
+
+        <h2 class="section-anchor" id="skills">🛠️ Tech Stacks & Skills</h2>
+        <div class="content-box">
+            <h3>Data & Programming</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Skills</th>
+                        <th>Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Programming</strong></td>
+                        <td>Python, R, Java, Go, C, Kotlin</td>
+                        <td>Advanced: Python, R | Basic: Java, Go, C, Kotlin</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Engineering & DB</strong></td>
+                        <td>Data Wrangling, Data Pipeline, MySQL, PostgreSQL</td>
+                        <td>Strong</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Analysis & ML</strong></td>
+                        <td>Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Matplotlib, Power BI, Excel</td>
+                        <td>Strong</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Tools & Others</h3>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Jupyter Notebook</span>
+            <span class="skill-tag">CoLab</span>
+            <span class="skill-tag">English (Basic)</span>
+            <span class="skill-tag">Chinese (Beginner)</span>
+        </div>
+
+        <h2 class="section-anchor" id="projects">🚀 Featured Projects</h2>
+        <div class="content-box">
+            <h4>1. ระบบจัดการคลังสินค้าของร้านขายอาหารเสริม (Database System)</h4>
+            <p><small><em>(โครงการวิชา Data Management System)</em></small></p>
+            <ul>
+                <li><strong>บทบาท:</strong> ออกแบบและพัฒนาระบบฐานข้อมูล (ER Diagram) สำหรับ Bus Shop</li>
+                <li><strong>ผลลัพธ์:</strong> สร้างฟังก์ชันการค้นหาข้อมูล, การทำธุรกรรม, และรายงานวิเคราะห์เพื่อสนับสนุนการตัดสินใจทางธุรกิจ</li>
+            </ul>
+        </div>
+        
+        <div class="content-box">
+            <h4>2. ระบบแจ้งเตือนปัญหาตู้เย็นอัจฉริยะ (Fridge Alert)</h4>
+            <p><small><em>(โครงการวิชา Creative Thinking and Problem Solving)</em></small></p>
+            <ul>
+                <li><strong>บทบาท:</strong> พัฒนาแอปพลิเคชันเพื่อแจ้งเตือนเมื่อมีของหมดอายุในตู้เย็น</li>
+                <li><strong>จุดเด่น:</strong> การประยุกต์ใช้ทักษะการแก้ปัญหาอย่างสร้างสรรค์ (Creative Problem Solving)</li>
+            </ul>
+        </div>
+
+        <h2 class="section-anchor" id="awards">🏆 Awards & Achievements</h2>
+        <div class="content-box">
+             <ul>
+                <li><strong>2567:</strong> ติด 2 ใน 5 ทีมสุดท้ายใน Hackathon: **MU ICT TourTech Challenge**</li>
+                <li><strong>2567:</strong> โครงการ **Fridge Alert** ได้รับการคัดเลือกนำเสนอ</li>
+                <li><strong>2567:</strong> รอบ 12 ทีมสุดท้ายในการแข่งขัน **MU Design-athon 2025**</li>
+                <li><strong>2566:</strong> ได้รับเกรด A ในวิชา Data Structure and Algorithms</li>
+            </ul>
+            <div class="award-img-placeholder">
+                <p><strong>[Placeholder]</strong> โปรดแนบภาพรางวัลของคุณที่นี่ เช่น: <code>&lt;img src="images/award_mu_hackathon.jpg" alt="รางวัล Hackathon"&gt;</code></p>
+            </div>
+        </div>
+        
+        <h2>📚 Education</h2>
+        <div class="content-box">
+            <ul>
+                <li><strong>ปริญญาตรี (ปัจจุบัน):</strong> สาขาคอมพิวเตอร์, มหาวิทยาลัยมหิดล (2566 - ปัจจุบัน) | GPA: 3.48</li>
+                <li><strong>มัธยมศึกษา:</strong> โรงเรียนอนุบาลนครนายก (2563 - 2565) | GPA: 3.39</li>
+            </ul>
+        </div>
+
+        <h2 class="section-anchor" id="contact">📧 Contact</h2>
+        <div class="content-box">
+            <p><strong>Email:</strong> 322400chira@gmail.com</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Tsuki2548" target="_blank">Tsuki2548</a></p>
+            <p><strong>LinkedIn/Figma:</strong> @oonchirasenta</p>
+            <p><strong>เบอร์โทรศัพท์:</strong> 0953308944</p>
+        </div>
+    </div>
+</body>
+</html>
