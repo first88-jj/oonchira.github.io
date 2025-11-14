@@ -121,6 +121,35 @@
   .logo:hover::before{
     animation:shine 0.8s;
   }
+    .project-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn.small-btn {
+  padding: 8px 14px;
+  background: #6c5ce7;
+  color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.btn.small-btn:hover {
+  background: #a29bfe;
+}
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project {
+  cursor: pointer;
+}
+
   
   @keyframes shine{
     to{transform:translateX(100%)}
@@ -577,34 +606,97 @@
       <a class="btn" href="#contact">ติดต่อฉัน</a>
     </section>
 
-    <section id="competitions">
-      <h2 class="section-title">การแข่งขัน</h2>
-      <div class="projects">
-        <div class="project">
-          <h4>🏆 รางวัลรองชนะเลิศอันดับที่ 2 ทีม plz i need champ</h4>
-          <p>การแข่งขัน Krungsri UniVerse x Khonkean university Hackathon ภายใต้หัวข้อ TourTech Challeng</p>
-        </div>
-        <div class="project">
-          <h4>🏆 รางวัลชมเชย ทีม Fridge Alert</h4>
-          <p>การแข่งขัน GE KKU Showcase<br>ประเภทนวัตกรรมและโครงงานเพื่อสังคม</p>
-        </div>
-        <div class="project">
-          <h4>🎨 เข้าร่วมการแข่งขัน ทีม KKUX</h4>
-          <p>การแข่งขัน UI Design-athon 2025<br>รอบ 13 ทีมสุดท้าย</p>
-        </div>
+  <section id="competitions">
+  <h2 class="section-title">การแข่งขัน</h2>
+  <div class="projects">
+
+     <div class="project">
+      <h4>🏆 รางวัลรองชนะเลิศอันดับที่ 2 ทีม plz i need champ</h4>
+      <p>การแข่งขัน Krungsri UniVerse x Khonkean university Hackathon ภายใต้หัวข้อ TourTech Challenge</p>
+
+      <div class="project-buttons">
+        <a href="https://drive.google.com/drive/folders/1HlkVlTHoOgFJMOqbOv9L2f4jTXmoBreH?usp=drive_link" target="_blank" class="btn small-btn">รางวัล</a>
+        <a href="https://www.figma.com/community/file/1538824771760758807/tammpay" target="_blank" class="btn small-btn">ไฟล์</a>
       </div>
-    </section>
+    </div>
+
+    <a href="https://github.com/firsttmm/Firdge-Alert" target="_blank" class="project-link">
+      <div class="project">
+        <h4>🏆 รางวัลชมเชย ทีม Fridge Alert</h4>
+        <p>การแข่งขัน GE KKU Showcase<br>ประเภทนวัตกรรมและโครงงานเพื่อสังคม</p>
+      </div>
+    </a>
+
+       <div class="project">
+      <h4>🎨 เข้าร่วมการแข่งขัน ทีม KKUX</h4>
+      <p>การแข่งขัน UI Design-athon 2025<br>รอบ 15 ทีมสุดท้าย</p>
+
+      <div class="project-buttons">
+        <a href="https://drive.google.com/drive/folders/1IpgmDWwzXEo0aZl6ZxMZ7YLwobae5VqH?usp=drive_link" target="_blank" class="btn small-btn">ภาพ</a>
+        <a href="https://www.figma.com/community/file/1510094116850507868/kkux" target="_blank" class="btn small-btn">ไฟล์นำเสนอ</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <section id="projects">
-      <h2 class="section-title">โปรเจกต์ GitHub</h2>
-      <div class="projects">
-        <div class="project"><h4>📦 MyStore</h4><p>ระบบจัดการสินค้า — Java, SQL, UI/UX</p></div>
-        <div class="project"><h4>🛍️ Bua Shop</h4><p>แอปจัดการสินค้า — Kotlin, MySQL, Android Studio</p></div>
-        <div class="project"><h4>🧠 Crime Scene Insights</h4><p>วิเคราะห์ข้อมูลอาชญากรรม — Python, Pandas, Power BI</p></div>
-        <div class="project"><h4>🏃 Rundom</h4><p>แอปช่วยออกกำลังกาย — Kotlin, Firebase</p></div>
-        <div class="project"><h4>📝 NoteNote</h4><p>เว็บจดโน้ตและจัดหมวดหมู่โน้ต — Java, Spring Boot, MySQL</p></div>
+  <h2 class="section-title">โปรเจกต์ในรายวิชาเรียน</h2>
+  <div class="projects">
+
+    <a href="https://drive.google.com/file/d/12fpJtjYFLNLgxqIXAyy6d6-HKzv6S74g/view?usp=sharing" target="_blank" class="project-link">
+      <div class="project">
+        <h4>เกมทายคำตอบจากภาพ</h4>
+        <p>เกม 4 ตัวเลือกเพื่อทายว่าคือสัตว์อะไรจากรูป — JavaFX, UI/UX</p>
       </div>
-    </section>
+    </a>
+
+    <a href="https://github.com/First364600/BuaShop" target="_blank" class="project-link">
+      <div class="project">
+        <h4>Bua Shop</h4>
+        <p>แอปพลิเคชันสำหรับลูกค้าเเละร้านค้า ลูกค้าสั่งของออนไลน์ และร้านค้าจัดการสินค้า — Kotlin, MySQL, Android Studio</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/Tsuki2548/Crime-Scene-Insights" target="_blank" class="project-link">
+      <div class="project">
+        <h4>Crime Scene Insights</h4>
+        <p>วิเคราะห์ข้อมูลการเกิดอาชญากรรมในสหรัฐอเมริกา — Python, Pandas, Power BI</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/firsttmm/wisages" target="_blank" class="project-link">
+      <div class="project">
+        <h4>Wisage</h4>
+        <p>แอปเรียนออนไลน์ที่สามารถเข้าร่วมคลาสหรือสร้างคลาสเอง — Kotlin, Firebase</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/Tsuki2548/TestNoteNote" target="_blank" class="project-link">
+      <div class="project">
+        <h4>NoteNote</h4>
+        <p>เว็บไซต์บันทึกโน้ตและจัดหมวดหมู่ — Java, Spring Boot, MySQL</p>
+      </div>
+    </a>
+
+    <a href="https://www.figma.com/community/file/1569983395626913235/mymind" target="_blank" class="project-link">
+      <div class="project">
+        <h4>MyMind</h4>
+        <p>แอปสร้าง Flowchart และแผนภาพความคิด — UX/UI Design</p>
+      </div>
+    </a>
+
+     <a href="https://www.canva.com/design/DAG0js4QPq8/oeKzcDxK0IctfMd9XA38Fw/view?utm_content=DAG0js4QPq8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8cf0e0eee8" target="_blank" class="project-link">
+      <div class="project">
+        <h4>การเทรนโมเดลขนาดเล็กเพื่อแปลงภาพปัจจุบันเป็นอดีต</h4>
+        <p>การเทรนโมเดลขนาดเล็กเพื่อแปลงภาพปัจจุบันเป็นอดีต</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
 
     <section id="timeline">
       <h2 class="section-title">ไทม์ไลน์การพัฒนา</h2>
@@ -628,8 +720,10 @@
     <section id="contact">
       <h2 class="section-title">ติดต่อ</h2>
       <div class="contact-info">
-        <p>📍 ขอนแก่น</p>
+         <p>Facebook: Oonchira Saenta</p>
+        <p>Line ID: 0951829184 </p>
         <p>📞 095-330-8944</p>
+        <p>Github: <a href="https://github.com/firsttmm" target="_blank">firsttmm</a></p>
         <p>✉️ <a href="mailto:3224oonchira@gmail.com">3224oonchira@gmail.com</a></p>
       </div>
     </section>
